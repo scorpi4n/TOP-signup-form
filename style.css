@@ -1,0 +1,7 @@
+:root {
+	--clr-main-light: white;
+	--clr-main-dark: black;
+	--clr-accent-light: #e5e7eb;
+	--clr-accent-dark: rgba(20, 20, 20, 0.8);
+	--clr-accent-default: #596d48;
+}
