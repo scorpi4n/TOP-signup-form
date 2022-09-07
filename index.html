@@ -10,8 +10,10 @@
 	<body class="flex">
 		<!-- sidebar -->
 		<div class="sidebar">
-			<div class="dark-bg">
-				<span><img src="./img/odin-lined.png" alt="Odon Logo" />Odin</span>
+			<div class="dark-bg flex">
+				<span class="flex">
+					<img id="logo" src="./img/odin-lined.png" alt="Odin Logo" />Odin
+				</span>
 			</div>
 		</div>
 		<!-- main area -->
@@ -26,17 +28,22 @@
 			</div>
 			<div>
 				<form id="create-account" action="#" method="get">
-					<label for="fname">First Name</label>
+					<label for="fname">First Name*</label>
 					<input required type="text" name="first_name" id="fname" />
+
 					<label for="lname">Last Name</label>
 					<input type="text" name="last_name" id="lname" />
-					<label for="email">Email</label>
+
+					<label for="email">Email*</label>
 					<input required type="email" name="email" id="email" />
+
 					<label for="phone_number">Phone Number</label>
 					<input type="tel" name="phone_number" id="phone_number" />
-					<label for="password">Password</label>
+
+					<label for="password">Password*</label>
 					<input required type="password" name="password" id="password" />
-					<label for="confirm_password">Confirm Password</label>
+
+					<label for="confirm_password">Confirm Password*</label>
 					<input
 						required
 						type="password"
