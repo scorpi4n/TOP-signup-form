@@ -154,8 +154,13 @@ table {
 	display: flex;
 }
 
+.grid {
+	display: grid;
+}
+
 main {
 	flex-direction: column;
+	background-color: whitesmoke;
 }
 
 .sidebar {
@@ -186,4 +191,35 @@ main {
 
 em {
 	font-style: italic;
+}
+
+form#create-account {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.standout {
+	background-color: white;
+	padding: 0 1rem 2rem;
+	box-shadow: 0 5px 5px lightgray;
+}
+
+h2 {
+	font-size: large;
+	font-weight: 500;
+	padding: 1rem;
+}
+
+.submit-form {
+	border: none;
+	border-radius: 0.25rem;
+	background-color: var(--clr-accent-default);
+	color: white;
+	font-weight: 700;
+	padding: 0.6rem 2.75rem;
+}
+
+a {
+	color: var(--clr-accent-default);
+	text-decoration: none;
+	font-weight: 550;
 }
