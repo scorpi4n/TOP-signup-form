@@ -2,6 +2,7 @@
 :root {
 	--clr-main-light: white;
 	--clr-main-dark: black;
+	--clr-main-gray: #1f2937;
 	--clr-accent-light: #e5e7eb;
 	--clr-accent-dark: rgba(0, 0, 0, 0.45);
 	--clr-accent-default: #596d48;
@@ -161,6 +162,11 @@ table {
 main {
 	flex-direction: column;
 	background-color: whitesmoke;
+	width: 65vw;
+}
+
+main > * {
+	margin: 0 0 0 2rem;
 }
 
 .sidebar {
@@ -201,12 +207,14 @@ form#create-account {
 	background-color: white;
 	padding: 0 1rem 2rem;
 	box-shadow: 0 5px 5px lightgray;
+	margin: 0;
 }
 
 h2 {
 	font-size: large;
-	font-weight: 500;
+	font-weight: 550;
 	padding: 1rem;
+	color: var(--clr-main-gray);
 }
 
 .submit-form {
