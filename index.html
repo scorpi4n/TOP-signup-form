@@ -30,7 +30,13 @@
 			<div class="standout">
 				<h2>Let's do this!</h2>
 				<div class="form-wrapper">
-					<form class="grid" id="create-account" action="#" method="get">
+					<form
+						class="grid"
+						id="create-account"
+						action="#"
+						method="get"
+						autocomplete="off"
+					>
 						<div>
 							<label for="first_name">First Name*</label>
 							<input required type="text" name="first_name" id="first_name" />
@@ -49,11 +55,18 @@
 						</div>
 						<div>
 							<label for="password">Password*</label>
-							<input required type="password" name="password" id="password" />
+							<input
+								class="error"
+								required
+								type="password"
+								name="password"
+								id="password"
+							/>
 						</div>
 						<div>
 							<label for="confirm_password">Confirm Password*</label>
 							<input
+								class="error"
 								required
 								type="password"
 								name="password"

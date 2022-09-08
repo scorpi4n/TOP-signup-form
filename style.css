@@ -263,4 +263,17 @@ label {
 input {
 	width: 15rem;
 	padding: 0.25rem;
+	border: 1px solid var(--clr-accent-light);
+	border-radius: 0.25rem;
+	outline: none;
+}
+
+input:focus {
+	border: 1px solid cornflowerblue;
+	outline: none;
+	box-shadow: 2px 2px 3px grey;
+}
+
+input.error {
+	border: 1px solid tomato;
 }
