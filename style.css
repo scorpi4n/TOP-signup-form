@@ -163,6 +163,7 @@ main {
 	flex-direction: column;
 	background-color: whitesmoke;
 	width: 65vw;
+	justify-content: center;
 }
 
 main > * {
@@ -207,14 +208,21 @@ form#create-account {
 	background-color: white;
 	padding: 0 1rem 2rem;
 	box-shadow: 0 5px 5px lightgray;
-	margin: 0;
+	margin: 2rem 0;
 }
 
 h2 {
 	font-size: large;
-	font-weight: 550;
+	font-weight: 600;
 	padding: 1rem;
 	color: var(--clr-main-gray);
+}
+
+p {
+	font-size: 1.1rem;
+	font-weight: 600;
+	width: 45vw;
+	padding-bottom: 1.5rem;
 }
 
 .submit-form {
@@ -224,10 +232,11 @@ h2 {
 	color: white;
 	font-weight: 700;
 	padding: 0.6rem 2.75rem;
+	margin-bottom: 2.5rem;
 }
 
 a {
 	color: var(--clr-accent-default);
 	text-decoration: none;
-	font-weight: 550;
+	font-weight: 600;
 }
