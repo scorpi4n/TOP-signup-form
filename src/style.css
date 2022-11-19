@@ -11,13 +11,13 @@
 /* fonts */
 @font-face {
 	font-family: 'Norse Bold';
-	src: url(./fonts/Norse-Bold.otf);
+	src: url(/src/assets/fonts/Norse-Bold.otf);
 }
 
-@font-face {
-	font-family: 'Metro Persona';
-	src: url(./fonts/MetropolisPersonalUseRegular-nR5LY.ttf);
-}
+/* @font-face {
+	font-family: 'Metro Personal';
+	src: url(/src/assets/fonts/MetropolisPersonalUseRegular-nR5LY.ttf);
+} */
 
 /* custom styling */
 .flex {
@@ -30,9 +30,10 @@
 }
 
 main {
-	flex-direction: column;
 	background-color: whitesmoke;
 	width: 65vw;
+
+	flex-direction: column;
 	justify-content: center;
 }
 
@@ -41,19 +42,22 @@ main>* {
 }
 
 .sidebar {
-	background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
+	background-image: url(/src/assets/img/halie-west-25xggax4bSA-unsplash.jpg);
 	background-size: cover;
 	height: 100vh;
 	min-width: 35vw;
 	font-family: 'Norse Bold';
 	color: var(--clr-main-light);
+	position: relative;
 }
 
 .dark-bg {
 	background-color: var(--clr-accent-dark);
-	margin: 23.5vh 0 0 0;
-	justify-content: center;
+	position: sticky;
+	top: 23.5vh;
 	padding: 0.5rem;
+
+	justify-content: center;
 }
 
 .dark-bg>span {
